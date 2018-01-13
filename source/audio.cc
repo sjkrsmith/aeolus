@@ -342,7 +342,7 @@ AlsaAudio::AlsaAudio (const char* appname, Lfq_u32 *qnote, Lfq_u32 *qcomm) :
 {
 }
 
-Audio::~Audio (void)
+AlsaAudio::~AlsaAudio (void)
 {
     if (_alsa_handle) close_alsa ();
 }

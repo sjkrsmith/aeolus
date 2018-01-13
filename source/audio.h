@@ -131,7 +131,7 @@ protected:
 class AlsaAudio : public Audio
 {
 public:
-    AlsaAudio (Lfq_u32 *qnote, Lfq_u32 *qcomm);
+    AlsaAudio (const char* appname, Lfq_u32 *qnote, Lfq_u32 *qcomm);
     ~AlsaAudio();
     void  init_alsa (const char *device, int fsamp, int fsize, int nfrag);
     virtual void thr_main (void);
